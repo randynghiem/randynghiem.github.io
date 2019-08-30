@@ -15,8 +15,14 @@
     });
 
     $('.nav-link,.anchor-intro').click(function (event) {
-      event.preventDefault();
       var hash = this.hash;
+
+      if (hash.indexOf("#") != 0) {
+        return;
+      }
+
+      event.preventDefault();
+
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function () {
