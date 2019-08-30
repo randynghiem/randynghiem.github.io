@@ -1,0 +1,93 @@
+.resume {
+  padding: 1rem 0rem;
+}
+
+.resume .r-header {
+  background-color: #464854;
+}
+
+.resume .r-header .photo {
+  width: 220px;
+}
+
+.resume .r-randy:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+  margin-left: 5px;
+}
+
+.rs-head {
+  position: relative;
+}
+
+.rs-head:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: #464854;
+}
+
+.theme-progress-bar-dark {
+  background-color: #58677c;
+}
+
+.rs-timeline {
+  padding-left: 32px;
+}
+
+.rs-timeline::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 100%;
+  background: #58677c;
+  left: 8px;
+  top: 6px;
+  position: absolute;
+}
+
+.rs-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fff;
+  border: 3px solid #6f8098;
+}
+
+.rs-timeline-item::after {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 10px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #6f8098;
+  z-index: 10;
+}
+
+
+
+
